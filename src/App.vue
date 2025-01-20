@@ -1,7 +1,8 @@
 <template>
-<TemplateRef />
+<Binding />
 </template>
 
 <script setup>
-import TemplateRef from '@/components/TemplateRef/TemplateRef.vue'
+
+import Binding from '@/components/Binding/Binding.vue'
 </script>
