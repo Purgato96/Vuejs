@@ -25,6 +25,13 @@
     <input type="radio" name="radio" id="fullstack" v-model="form.radio" value="fullstack">
     <label for="fullstack">FullStack</label>
     <br><br>
+    <label for="skill">Qual a sua habilidade?</label>
+    <select type="" name="skill" id="skill" v-model="form.skill">
+      <option value="backend">Backend</option>
+      <option value="frontend">Frontend</option>
+      <option value="fulsstack">FullStack</option>
+    </select>
+    <br><br>
     <input type="submit">
 
   </form>
@@ -54,6 +61,7 @@ const props = {
     bio: 'Programador',
     notifications: false,
     radio: '',
+    skill: '',
 
   }
 }
@@ -64,6 +72,7 @@ const form = reactive({
   bio: props.user.bio,
   notifications: props.user.notifications,
   radio: props.user.radio,
+  skill: props.user.skill,
 })
 
 const submitForm = () => {
