@@ -1,12 +1,18 @@
 <template>
   <h1>Form</h1>
 
+  <pre>
+    {{ form }}
+  </pre>
+
   <form action="" @submit.prevent="submitForm">
     <label for="name">Nome</label>
     <input type="text" name="name" id="name" v-model="form.name">
     <br><br>
     <label for="email">Email</label>
     <input type="email" name="email" id="email" v-model="form.email">
+    <br><br>
+    <textarea v-model="form.bio"></textarea>
     <br><br>
     <input type="submit">
 
@@ -33,13 +39,16 @@ import { reactive } from 'vue'
 const props = {
   user: {
     name: 'Matheus',
-    email: 'matheuspurgato@gmail.com'
+    email: 'matheuspurgato@gmail.com',
+    bio: 'Programador',
+
   }
 }
 
 const form = reactive({
   name: props.user.name,
-  email: props.user.email
+  email: props.user.email,
+  bio: props.user.bio,
 })
 
 const submitForm = () => {
