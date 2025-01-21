@@ -1,8 +1,7 @@
 <template>
-<Binding />
+<EventHandling />
 </template>
 
 <script setup>
-
-import Binding from '@/components/Binding/Binding.vue'
+import EventHandling from '@/components/EventHandling/EventHandling.vue'
 </script>
