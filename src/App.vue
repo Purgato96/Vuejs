@@ -5,6 +5,7 @@
 <VTEXT />
 <VHTML />
 -->
+  <VFOR />
 </template>
 
 <script setup>
@@ -16,4 +17,5 @@ import VTEXT from '@/components/Directives/VTEXT.vue'
 import VHTML from '@/components/Directives/VHTML.vue'
 
 */
+import VFOR from '@/components/Directives/VFOR.vue'
 </script>
