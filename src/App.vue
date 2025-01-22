@@ -21,9 +21,16 @@
 <VCLOAK />
 <VONCE />
 <VMEMO />
+<Composition/>
+<Options />
 -->
-
-
+<CompositionCard
+  title="Este é o título do meu card"
+  :body="'Este é o conteudo do meu card'"
+  :access="1230"
+  :status="true"
+  format="user"
+/>
 </template>
 
 <script setup>
@@ -39,8 +46,10 @@ import VPRE from '@/components/Directives/VPRE.vue'
 import VCLOAK from '@/components/Directives/VCLOAK.vue'
 import VONCE from '@/components/Directives/VONCE.vue'
 import VMEMO from '@/components/Directives/VMEMO.vue'
-
+import Composition from '@/components/Register/Composition.vue'
+import Options from '@/components/Register/Options.vue'
 */
 
+import CompositionCard from '@/components/Props/CompositionCard.vue'
 
 </script>
