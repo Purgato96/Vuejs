@@ -17,8 +17,9 @@
 <p>aqui está o conteúdo do meu card</p>
 </template>
 </CARD>
+<VPRE />
 -->
-  <VPRE />
+<VCLOAK />
 </template>
 
 <script setup>
@@ -30,6 +31,7 @@ import VHTML from '@/components/Directives/VHTML.vue'
 import VFOR from '@/components/Directives/VFOR.vue'
 import VSLOT from '@/components/Directives/VSLOT.vue'
 import CARD from '@/components/Directives/CARD.vue'
-*/
 import VPRE from '@/components/Directives/VPRE.vue'
+*/
+import VCLOAK from '@/components/Directives/VCLOAK.vue'
 </script>
