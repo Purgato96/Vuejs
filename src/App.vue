@@ -19,8 +19,11 @@
 </CARD>
 <VPRE />
 <VCLOAK />
+<VONCE />
+<VMEMO />
 -->
-  <VONCE />
+
+
 </template>
 
 <script setup>
@@ -34,6 +37,10 @@ import VSLOT from '@/components/Directives/VSLOT.vue'
 import CARD from '@/components/Directives/CARD.vue'
 import VPRE from '@/components/Directives/VPRE.vue'
 import VCLOAK from '@/components/Directives/VCLOAK.vue'
-*/
 import VONCE from '@/components/Directives/VONCE.vue'
+import VMEMO from '@/components/Directives/VMEMO.vue'
+
+*/
+
+
 </script>
