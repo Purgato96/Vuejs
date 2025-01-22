@@ -1,8 +1,7 @@
 <template>
-<Form />
+<Vif />
 </template>
 
 <script setup>
-
-import Form from '@/components/Form/Form.vue'
+import Vif from '@/components/Directives/VIF.vue'
 </script>
