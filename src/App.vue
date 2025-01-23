@@ -1,13 +1,10 @@
 <template>
-  <KeepAlive>
-<CompKeepAlive v-if="keepAlive" />
-  </KeepAlive>
-  <button @click=" keepAlive = !keepAlive">Tooggle</button>
+  <p>Saída do comando Date: {{ new Date() }}</p>
+  <p>Data formatada {{ paramDate}}</p>
 </template>
 
 <script setup>
-import CompKeepAlive from '@/components/KeepAlive/CompKeepAlive.vue'
-import { ref } from 'vue'
 
-const keepAlive = ref(true)
+import { useToDateFormat } from './components/Composable/useToDateFormat.js'
+const {paramDate} = useToDateFormat(new Date())
 </script>
