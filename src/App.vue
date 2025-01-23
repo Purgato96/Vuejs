@@ -1,7 +1,13 @@
 <template>
-<SuspenseComponent />
+  <KeepAlive>
+<CompKeepAlive v-if="keepAlive" />
+  </KeepAlive>
+  <button @click=" keepAlive = !keepAlive">Tooggle</button>
 </template>
 
 <script setup>
-import SuspenseComponent from '@/components/Suspense/SuspenseComponent.vue'
+import CompKeepAlive from '@/components/KeepAlive/CompKeepAlive.vue'
+import { ref } from 'vue'
+
+const keepAlive = ref(true)
 </script>
