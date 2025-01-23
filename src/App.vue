@@ -1,26 +1,21 @@
 <template>
-  <CompositionCard
-    :title="card.title"
-    :access="card.access"
-    :status="card.status"
-    :format="card.format"
-    @updateTitle="changeTitle"
-  />
-
+<Users />
 </template>
 
 <script setup>
-import CompositionCard from '@/components/Props/CompositionCard.vue'
-import { reactive } from 'vue'
-const card = reactive({
-  title: 'Este é o título do meu card',
-  access: 1230,
-  status: true,
-  format: 'user'
-})
+import Users from '@/components/ProvideInject/Users.vue'
+import { provide } from 'vue'
 
-const changeTitle = (data) => {
-  //card.title = 'Novo título'
-  card.title = data
-}
+const users = [
+{
+  id: 1,
+  name: 'Matheus',
+},
+{
+  id: 2,
+  name: 'Ana'
+},
+]
+
+provide('users', users)
 </script>
